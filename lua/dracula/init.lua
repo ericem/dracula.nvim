@@ -99,7 +99,8 @@ highlight("CursorLineNr", colors.fg, nil, "bold", nil)
 highlight("SignColumn", nil, colors.bg, nil, nil)
 highlight("Conceal", colors.comment, nil, nil, nil)
 highlight("CursorColumn", nil, colors.black, nil, nil)
-highlight("CursorLine", nil, colors.selection, nil, nil)
+-- highlight("CursorLine", nil, colors.selection, nil, nil)
+highlight("CursorLine", nil, nil, nil, nil)
 
 highlight("StatusLine", colors.white, colors.black, nil, nil)
 highlight("StatusLineNC", colors.comment, nil, nil, nil)
@@ -310,3 +311,56 @@ highlight('LspReferenceText', colors.orange, nil, nil, nil)
 highlight('LspReferenceRead', colors.orange, nil, nil, nil)
 highlight('LspReferenceWrite', colors.orange, nil, nil, nil)
 
+-- Coc
+highlight('CocFadeOut', colors.comment, nil, 'undercurl', colors.selection) -- for faded out text, such as for highlighting unnecessary code.
+highlight('CocErrorSign', colors.red, nil, nil, nil) -- for error signs.
+highlight('CocWarningSign', colors.orange, nil, nil, nil) -- for warning signs.
+highlight('CocInfoSign', colors.cyan, nil, nil, nil) -- for information signs.
+highlight('CocHintSign', colors.cyan, nil, nil, nil) -- for hint signs.
+highlight('CocErrorVirtualText', colors.red, nil, nil, nil) -- for error virtual text.
+highlight('CocWarningVirtualText', colors.orange, nil, nil, nil) -- for warning virtual text.
+highlight('CocInfoVirtualText', colors.cyan, nil, nil, nil) -- for information virtual text.
+highlight('CocHintVirtualText', colors.cyan, nil, nil, nil) -- for hint virtual text.
+highlight('CocWarningHighlight', nil, nil, 'undercurl', colors.orange) -- for warning code range.
+highlight('CocErrorHighlight', nil, nil, 'undercurl', colors.red) -- for error code range.
+highlight('CocInfoHighlight', nil, nil, 'undercurl', colors.cyan) -- for info code range.
+highlight('CocHintHighlight', nil, nil, 'undercurl', colors.cyan) -- for hint code range.
+highlight('CocDeprecatedHighlight', nil, nil, 'strikethrough', colors.red) -- for deprecated code range, links to |CocStrikeThrough| by default.
+highlight('CocUnusedHighlight', colors.comment, nil, 'undercurl', colors.selection) -- for unnecessary code range, links to |CocFadeOut| by
+highlight('CocErrorLine', nil, nil, nil, nil) -- line highlight of sign which contains error.
+highlight('CocWarningLine', nil, nil, nil, nil) -- line highlight of sign which contains warning.
+highlight('CocInfoLine', nil, nil, nil, nil) -- line highlight of sign which information. 
+highlight('CocHintLine', nil, nil, nil, nil) -- line highlight of sign which contains hint.
+highlight("CocFloating", colors.white, nil, nil, nil) -- default float
+highlight('CocFloatingBorder', colors.white, nil, nil, nil) -- border for default float
+highlight('CocErrorFloat', colors.red, nil, nil, nil) -- for error in floating windows/popups.
+highlight('CocInfoFloat', colors.cyan, nil, nil, nil) -- for infos in floating windows/popups.
+highlight('CocWarningFloat', colors.orange, nil, nil, nil) -- for warning in floating windows/popups.
+highlight('CocHingFloat', colors.cyan, nil, nil, nil) -- for hints in floating windows/popups.
+highlight('CocSymbolFile', nil, colors.bg, nil, nil)
+highlight('CocSymbolModule', nil, colors.bg, nil, nil)
+highlight('CocSymbolNamespace', nil, colors.bg, nil, nil)
+highlight('CocSymbolPackage', nil, colors.bg, nil, nil)
+highlight('CocSymbolClass', nil, colors.bg, nil, nil)
+highlight('CocSymbolMethod', colors.green, nil, nil, nil)
+highlight('CocSymbolProperty', nil, colors.bg, nil, nil)
+highlight('CocSymbolField', nil, colors.bg, nil, nil)
+highlight('CocSymbolConstructor', nil, colors.bg, nil, nil)
+highlight('CocSymbolEnum', nil, colors.bg, nil, nil)
+highlight('CocSymbolInterface', nil, colors.bg, nil, nil)
+highlight('CocSymbolFunction', nil, colors.bg, nil, nil)
+highlight('CocSymbolVariable', nil, colors.bg, nil, nil)
+highlight('CocSymbolConstant', nil, colors.bg, nil, nil)
+highlight('CocSymbolString', nil, colors.bg, nil, nil)
+highlight('CocSymbolNumber', nil, colors.bg, nil, nil)
+highlight('CocSymbolBoolean', nil, colors.bg, nil, nil)
+highlight('CocSymbolArray', nil, colors.bg, nil, nil)
+highlight('CocSymbolObject', nil, colors.bg, nil, nil)
+highlight('CocSymbolKey', nil, colors.bg, nil, nil)
+highlight('CocSymbolNull', nil, colors.bg, nil, nil)
+highlight('CocSymbolEnumMember', nil, colors.bg, nil, nil)
+highlight('CocSymbolStruct', nil, colors.bg, nil, nil)
+highlight('CocSymbolEvent', nil, colors.bg, nil, nil)
+highlight('CocSymbolOperator', nil, colors.bg, nil, nil)
+highlight('CocSymbolTypeParameter', nil, colors.bg, nil, nil)
+highlight('CocSymbolDefault', nil, colors.bg, nil, nil)
